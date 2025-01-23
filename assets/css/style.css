@@ -6,6 +6,8 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: normal;
+    max-width:100%;
+    
     
 }
 body{
