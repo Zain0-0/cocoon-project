@@ -22,6 +22,31 @@ body{
   section{
     padding: 50px 40px;
   }
+
+
+.nav-container{
+   
+    background-color: white;
+}
+.nav-content ul{
+    gap: 10px;
+}
+.nav-item .nav-link:hover{
+        color: #2A75FF;
+}
+@media only screen and (max-width:992px){
+    .nav-content{
+        position: absolute;
+        
+        top: 85px;
+        background-color: white;
+        padding: 5px;
+        
+    }
+}
+
+
+
   .navbar-section{
     height: 86px;
     padding: 0px 40px;
