@@ -1,0 +1,333 @@
+*{
+    font-family: "Nunito", serif;
+    
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: normal;
+    
+}
+body{
+    overflow-x: hidden;
+}
+.nunito-regular {
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  section{
+    padding: 50px 40px;
+  }
+  .navbar-section{
+    height: 86px;
+    padding: 0px 40px;
+    background-color: rgb(255, 255, 255);
+  }
+  .nav-logo{
+    height: 100%;
+    width: 120px;
+  }
+  .nav-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  a{
+    text-decoration: none;
+    border: none;
+
+  }
+  
+  .nav-tabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: transparent;
+    border: 0px;
+  }
+  .nav-tabs a {
+    color: rgb(0, 0, 0);
+    
+  }
+  .blue-btn{
+    padding: 4px 10px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: #2A75FF;
+    font-size: 14px;
+    width: 100%;
+  }
+  .blue-btn:hover{
+    text-decoration: underline;
+  }
+  .menu-icon{
+
+    border: 1px solid #a2a1a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    padding: 1px;
+
+  }
+
+
+  @media only screen and (max-width:768px){
+    .navbar-section{
+        height: fit-content;
+    }
+   section{
+    padding: 30px 20px;
+   }
+    .hero{
+        padding: 20px 20px;
+      }
+    .nav-tabs{
+        /* position: absolute;
+        top: 70px;
+        left: 0; */
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        padding: 30px;
+        gap: 10px;
+    }
+  }
+
+
+  .hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/banner.jpg);
+    /* height: 80vh; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 0px 100px ;
+    
+  }
+  .hero h2{
+    padding: 10px 100px;
+  }
+  .size48{
+    font-size: 48px;
+    font-weight: 300;
+  }
+  .typing-animation{
+    width: fit-content;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+   
+
+  }
+  .typing-animation-text{
+    
+   
+      animation: typing 2s steps(18) infinite;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid white;
+     /*  */
+      width: 18ch;
+      padding: 0px;
+
+      text-align: center;
+   
+  }
+  @keyframes typing{
+    from{
+        width: 0ch;
+    }
+    to{
+        width: 18ch;
+    }
+  }
+
+.size18{
+    font-size: 18px;
+}
+.hero-form{
+    width: fit-content;
+    border-radius: 5px 5px 5px 50px ;
+    padding: 20px 40px;
+    background-color: white;
+}
+.hero-form form{
+    gap: 20px;
+    min-width: 300px;
+}
+
+.hero-form form input{
+    border: none;
+    border-bottom:1px solid #a2a1a1 ;
+    padding: 4px;
+    
+}
+#people{
+    width: 80px;
+}
+#location{
+    width: 210px;
+}
+
+@media only screen and (max-width:768px){
+    .hero-form-btn{
+        width: 100%;
+    }
+    .hero-form-input{
+        width:100%;
+    }
+    .hero-form{
+        padding: 15px;
+    }
+    #people{
+        width:90%;
+    }
+    #location{
+        width: 90%;
+    }
+    .size18{
+        font-size: 16px;
+    }
+    .size48{
+        font-size: 22px;
+    }
+    .hero h2{
+        padding: 10px;
+    }
+    
+    
+}
+
+.office{
+    padding: 50px 20px;
+}
+.office-text{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.size30{
+    font-size: 30px;
+    font-weight: 300;
+}
+.size16{
+    font-size: 16px;
+}
+.office-features-img{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    
+}
+.office-features-img img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.size25{
+    font-size: 25px;
+}
+.size15{
+    font-size: 15px;
+}
+
+@media only screen and (max-width:768px){
+    .size30{
+        font-size: 25px;
+    }
+}
+
+.findcocoon-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/find_cocon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vh;
+}
+
+.workspace-features{
+    gap: 20px;
+}
+.workspace-features-img{
+    height: 90px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.workspace-features-img img{
+    height: 90%;
+    width:  100%;
+    /* object-fit: cover */
+    object-position: bottom;
+}
+.size19{
+    font-size: 19px;
+    font-weight: 700;
+}
+.workspace-features-content p{
+    color: #6C757D;
+}
+.gray-text{
+    color: #6C757D;
+}
+.gray-text a{
+    color: #FF4338;
+    text-decoration: underline;
+}
+.gray-text a:hover{
+    color: blue;
+}
+
+.meeting-rooms{
+    background: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.1)),url(../images/testimonial.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 78vh;
+}
+
+.user-logo .row .col{
+    height: 120px;
+}
+.user-logo img{
+    height: 100%;
+}
+
+.size20{
+    font-size: 20px;
+}
+.footer{
+    background-color: #141B24;
+    color: white;
+}
+.size14{
+    font-size: 14px;
+}
+.footer-content{
+    gap: 30px;
+}
+.footer-content-links{
+    gap: 5px;
+}
+.footer-content-links a{
+    color: white;
+}
+.footer-content-links a:hover{
+    color: #FF4338;
+    text-decoration: underline;
+}
